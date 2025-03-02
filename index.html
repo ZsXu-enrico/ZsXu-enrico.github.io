@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zishuo Xu - HUST</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 60px;
+            display: flex;
+            gap: 80px;
+        }
+
+        /* 左侧样式 */
+        .left-column {
+            flex: 1;
+            padding: 40px 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 25px;
+            border: 5px solid #e8e8e8;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .info {
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .info h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* 右侧样式 */
+        .right-column {
+            flex: 2;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .bio {
+            line-height: 1.8;
+            color: #555;
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+
+        .email {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        /* CV下载按钮样式 */
+        .cv-download {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #2c3e50;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .cv-download:hover {
+            background-color: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .cv-download:active {
+            transform: translateY(0);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 0 20px;
+                gap: 30px;
+            }
+            
+            .left-column,
+            .right-column {
+                width: 100%;
+            }
+
+            .cv-download {
+                width: 100%;
+                text-align: center;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧栏 -->
+        <div class="left-column">
+            <img src="photo.jpg" alt="Zishuo Xu" class="profile-img">
+            <div class="info">
+                <h3>Huazhong University of Science and Technology</h3>
+                <p>Software Engineering</p>
+                <a href="mailto:ZishuoXuHUST@163.com" class="email">ZishuoXuHUST@163.com</a>
+            </div>
+        </div>
+
+        <!-- 右侧栏 -->
+        <div class="right-column">
+            <div class="bio">
+                <h1>Zishuo Xu</h1>
+                <br>
+                <p>I am Zishuo Xu, a junior student majoring in Software Engineering from Huazhong University of Science and Technology (HUST) in China.</p>
+                <br>
+                
+                <!-- CV下载按钮 -->
+                <a href="YOUR_PDF_URL_HERE" 
+                   class="cv-download"
+                   target="_blank"
+                   download="ZishuoXu_CV.pdf">
+                   📄 Download Full CV (PDF)
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
